@@ -31,6 +31,7 @@ def talk_to_me(update, context):
 
 def planet_func(update, context):
     text = update.message.text
+    logging.info(update)
     try:
         planet = valid_planet_name(text)
     except PlanetNameError as err:

@@ -18,7 +18,7 @@ def valid_planet_name(text):
         raise PlanetNameError(
             'Как-то некорректно сформулирован запрос. То ли планеты такой нет, то ли с синтаксисом кто-то напутал... '
             'Попробуй еще раз, шаблон следующий: /planet планета')
-    input_planet = input_lst[-1].capitalize()
+    input_planet = input_lst[-1].lower().capitalize()
     en_planet = all(map(lambda c: c in ascii_letters, input_planet))
     if en_planet and input_planet in planets.values():
         return input_planet
