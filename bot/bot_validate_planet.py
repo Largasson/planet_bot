@@ -13,6 +13,7 @@ planets = {'Марс': 'Mars', 'Меркурий': 'Mercury', 'Венера': 'V
 def valid_planet_name(text):
     '''Проверка на корректность планеты, перевод с русского на английский'''
 
+
     input_lst = text.split()
     if len(input_lst) != 2:
         raise PlanetNameError(
