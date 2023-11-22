@@ -11,12 +11,6 @@ from random import choice
 # Конфигурация логирования, настройка указания времени
 logging.basicConfig(filename='bot.log', level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
-PROXY = {
-    'proxy_url': settings.PROXY_URL,
-    'urllib3_proxy_kwargs': {
-        'username': settings.PROXY_USERNAME,
-        'password': settings.PROXY_PASSWORD
-    }}
 
 answer_var = ['Не знаю такой команды. Попробуй еще раз.', 'Смотри, все просто: вводишь команду /planet потом пробел и название планеты.',
               'Повторите ввод в формате: /planet <имя планеты>.', 'Может день такой. Просто.. /planet планета']
